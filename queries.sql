@@ -64,11 +64,14 @@ BEGIN;
 -- Delete all records in the animals table
 DELETE FROM animals;
 
+-- Check if records exist after delete
+SELECT COUNT(*) FROM animals;
+
 -- Rollback the transaction
 ROLLBACK;
 
 -- Check if records still exist after rollback
-SELECT * FROM animals;
+SELECT COUNT(*) FROM animals;
 
 
 
