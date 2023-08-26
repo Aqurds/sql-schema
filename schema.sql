@@ -18,10 +18,6 @@ CREATE TABLE species (
     name VARCHAR(255)
 );
 
--- Drop the existing PRIMARY KEY constraint
-ALTER TABLE animals
-DROP CONSTRAINT animals_pkey;
-
 -- Add a new autoincremented PRIMARY KEY constraint on the id column
 ALTER TABLE animals
 ADD COLUMN id SERIAL PRIMARY KEY;
